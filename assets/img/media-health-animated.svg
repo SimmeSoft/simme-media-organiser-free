@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="220" viewBox="0 0 240 220" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="mh2-title mh2-desc">
+  <title id="mh2-title">Media Health Centre</title>
+  <desc id="mh2-desc">A complete silver and lime glass frame. Four subtle scenes represent local media scanning, duplicate comparison, image-description review and usage tracing. No files are depicted as deleted or automatically fixed. Decorative 32-second loop with quiet pauses.</desc>
+  <defs>
+    <linearGradient id="mhc-glass" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#fff" />
+      <stop offset=".18" stop-color="#dae5f0" />
+      <stop offset=".44" stop-color="#a6b7c9" />
+      <stop offset=".68" stop-color="#e8eff3" />
+      <stop offset=".87" stop-color="#cddcaa" />
+      <stop offset="1" stop-color="#e3edb3" />
+    </linearGradient>
+    <linearGradient id="mhc-rim" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d4e3f7" />
+      <stop offset=".6" stop-color="#8498b1" />
+      <stop offset="1" stop-color="#c8eb6a" />
+    </linearGradient>
+    <linearGradient id="mhc-image" x1=".2" y1="0" x2=".65" y2="1">
+      <stop stop-color="#fcffff" />
+      <stop offset=".32" stop-color="#dfebf5" />
+      <stop offset=".7" stop-color="#b7c8d8" />
+      <stop offset="1" stop-color="#d7edac" />
+    </linearGradient>
+    <linearGradient id="mhc-screen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17283b" />
+      <stop offset="1" stop-color="#080f1b" />
+    </linearGradient>
+    <linearGradient id="mhc-pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#baf143" />
+      <stop offset=".55" stop-color="#ebff9c" />
+      <stop offset="1" stop-color="#b0ed37" />
+    </linearGradient>
+    <linearGradient id="mhc-scan" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#d5f69b" stop-opacity="0" />
+      <stop offset=".8" stop-color="#d5f69b" stop-opacity=".14" />
+      <stop offset="1" stop-color="#eeffba" stop-opacity=".35" />
+    </linearGradient>
+    <clipPath id="mhc-window">
+      <rect x="38" y="36" width="139" height="133" rx="14" />
+    </clipPath>
+  </defs>
+  <style>
+.mh2-scene{animation:mh2-scene 32s ease-in-out infinite;opacity:0}
+.mh2-scan{animation-delay:0s}.mh2-duplicates{animation-delay:-24s}.mh2-description{animation-delay:-16s}.mh2-usage{animation-delay:-8s}
+.mh2-beam{animation:mh2-beam 32s ease-in-out infinite}
+.mh2-copy{animation:mh2-copy 32s ease-in-out infinite}
+.mh2-links{stroke-dasharray:1;animation:mh2-links 32s ease-in-out infinite}
+.mh2-pulse{stroke-dasharray:1;animation:mh2-pulse 8s ease-in-out infinite}
+@keyframes mh2-scene{0%,21%,100%{opacity:1}25%,96%{opacity:0}}
+@keyframes mh2-beam{0%{transform:translateX(0);opacity:0}3%{opacity:.7}13%{transform:translateX(111px);opacity:.7}17%,100%{transform:translateX(111px);opacity:0}}
+@keyframes mh2-copy{0%,25%,49%,100%{transform:translateX(0)}32%,43%{transform:translateX(8px)}}
+@keyframes mh2-links{0%,75%,100%{stroke-dashoffset:1}85%,96%{stroke-dashoffset:0}}
+@keyframes mh2-pulse{0%,55%,100%{stroke-dashoffset:1;opacity:0}60%{opacity:1;stroke-dashoffset:1}85%{opacity:1;stroke-dashoffset:0}95%{opacity:0;stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.mh2-scene,.mh2-beam,.mh2-copy,.mh2-links,.mh2-pulse{animation:none!important}.mh2-scene{display:none}.mh2-scan{display:inline;opacity:1}.mh2-beam,.mh2-pulse{display:none}}
+</style>
+  <rect x="26" y="18" width="188" height="184" rx="31" fill="url(#mhc-glass)" stroke="url(#mhc-rim)" stroke-width="2.2" />
+  <rect x="29" y="21" width="182" height="178" rx="28" fill="none" stroke="#f5fff0" stroke-width="1.3" />
+  <rect x="39" y="31" width="162" height="158" rx="21" fill="url(#mhc-screen)" stroke="#718b93" stroke-width="2" />
+  <path d="M33 54Q34 24 61 24H181" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".85" />
+  <path d="M39 176Q42 195 62 195H179" fill="none" stroke="#ecffc5" stroke-width="2" opacity=".7" />
+  <path d="M52 158H188" stroke="#779387" stroke-opacity=".25" />
+  <path d="M60 174h38l6-5 6 10 8-16 8 17 7-10 6 4h41" fill="none" stroke="#c8f46b" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />
+  <path class="mh2-pulse" pathLength="1" d="M60 174h38l6-5 6 10 8-16 8 17 7-10 6 4h41" fill="none" stroke="#f5ffd4" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+  <g class="mh2-scene mh2-scan">
+    <rect x="59" y="49" width="122" height="94" rx="11" fill="#102238" stroke="#e9f7ca" stroke-width="3.1" />
+    <circle cx="143" cy="74" r="11" fill="url(#mhc-image)" />
+    <path d="M68 129C78 119 88 94 99 94S119 119 128 119C137 119 139 108 145 108S162 121 173 129Z" fill="url(#mhc-image)" stroke="#e9f7ca" stroke-width="3.1" stroke-linejoin="round" />
+    <path class="mh2-beam" d="M65 58v74" stroke="#e9f7ca" stroke-width="3.9000000000000004" stroke-linecap="round" />
+  </g>
+  <g class="mh2-scene mh2-duplicates">
+    <g class="mh2-copy">
+      <rect x="58" y="51" width="80" height="80" rx="10" fill="#1b3344" stroke="#e9f7ca" stroke-width="3.1" />
+      <circle cx="113" cy="72" r="7" fill="url(#mhc-image)" />
+      <path d="M65 119C73 111 80 93 89 93S108 111 117 119Z" fill="url(#mhc-image)" stroke="#e6f3d4" stroke-width="1.8" stroke-linejoin="round" />
+    </g>
+    <rect x="102" y="66" width="79" height="79" rx="10" fill="#102238" stroke="#e9f7ca" stroke-width="3.1" />
+    <circle cx="157" cy="87" r="7" fill="url(#mhc-image)" />
+    <path d="M109 134C117 126 124 108 133 108S152 126 161 134Z" fill="url(#mhc-image)" stroke="#e6f3d4" stroke-width="1.8" stroke-linejoin="round" />
+    <path d="M81 137h12m-9-4-4 4 4 4" fill="none" stroke="#e9f7ca" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g class="mh2-scene mh2-description">
+    <rect x="57" y="52" width="80" height="78" rx="10" fill="#162c3e" stroke="#e9f7ca" stroke-width="3.1" />
+    <circle cx="112" cy="73" r="8" fill="url(#mhc-image)" />
+    <path d="M65 118C73 110 80 92 89 92S108 110 117 118Z" fill="url(#mhc-image)" stroke="#e6f3d4" stroke-width="1.8" stroke-linejoin="round" />
+    <path d="M116 91h59q8 0 8 8v30q0 8-8 8h-28l-12 10v-10h-19q-8 0-8-8V99q0-8 8-8Z" fill="#304639" stroke="#e9f7ca" stroke-width="3.1" />
+    <path d="M120 106h49M120 117h36M120 128h24" stroke="#e9f7ca" stroke-width="4.55" stroke-linecap="round" />
+  </g>
+  <g class="mh2-scene mh2-usage">
+    <path d="M91 97h28V64h32M119 97h32M119 97v33h32" fill="none" stroke="#a9c988" stroke-width="3.1" stroke-linejoin="round" />
+    <path class="mh2-links" pathLength="1" d="M91 97h28V64h32M119 97h32M119 97v33h32" fill="none" stroke="#e9f7ca" stroke-width="3.25" stroke-linejoin="round" />
+    <rect x="55" y="75" width="43" height="44" rx="8" fill="#182d40" stroke="#e9f7ca" stroke-width="3.1" />
+    <circle cx="84" cy="87" r="4" fill="url(#mhc-image)" />
+    <path d="M61 110C66 105 69 95 74 95S86 105 91 110Z" fill="url(#mhc-image)" stroke="#e6f3d4" stroke-width="1.8" stroke-linejoin="round" />
+    <g fill="#304639" stroke="#e9f7ca" stroke-width="3.1">
+      <rect x="151" y="51" width="30" height="25" rx="5" />
+      <rect x="151" y="84" width="30" height="25" rx="5" />
+      <rect x="151" y="117" width="30" height="25" rx="5" />
+    </g>
+    <path d="M158 59h16M158 65h11M158 92h16M158 98h11M158 125h16M158 131h11" stroke="#e9f7ca" stroke-width="3.1" stroke-linecap="round" />
+  </g>
+</svg>

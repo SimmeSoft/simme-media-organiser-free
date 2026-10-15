@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="studio-title studio-desc">
+  <title id="studio-title">Simme Media Studio</title>
+  <desc id="studio-desc">A violet media studio icon. Its lamp switches on and casts a shimmer, miniature scenes animate inside the picture, the headphones respond to sound, then the studio rests for six seconds before the light turns off.</desc>
+  <defs>
+    <linearGradient id="st-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff"/><stop offset=".18" stop-color="#eadcff"/><stop offset=".5" stop-color="#a376ff"/><stop offset=".78" stop-color="#7640e8"/><stop offset="1" stop-color="#ef76ff"/>
+    </linearGradient>
+    <linearGradient id="st-frame" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e6ceff"/><stop offset=".28" stop-color="#9365ff"/><stop offset=".68" stop-color="#6832d1"/><stop offset="1" stop-color="#f45bf3"/>
+    </linearGradient>
+    <linearGradient id="st-panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f4dfff"/><stop offset=".43" stop-color="#bd8cff"/><stop offset="1" stop-color="#7430e3"/>
+    </linearGradient>
+    <linearGradient id="st-dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7345dd"/><stop offset="1" stop-color="#38138c"/>
+    </linearGradient>
+    <linearGradient id="st-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity=".96"/><stop offset=".28" stop-color="#f6d9ff" stop-opacity=".7"/><stop offset="1" stop-color="#b25aff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="st-shimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="st-sea" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#c898ff"/><stop offset="1" stop-color="#7339ce"/>
+    </linearGradient>
+    <radialGradient id="st-bulb">
+      <stop stop-color="#fff"/><stop offset=".55" stop-color="#fff4d8"/><stop offset="1" stop-color="#f2bcff"/>
+    </radialGradient>
+    <filter id="st-soft-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="st-screen-clip"><rect x="76" y="111" width="108" height="78" rx="9"/></clipPath>
+    <clipPath id="st-beam-clip"><path d="M112 58h32l32 62H80Z"/></clipPath>
+  </defs>
+  <style>
+    .st-glint{transform-box:fill-box;transform-origin:center;animation:st-glint 16s ease-in-out infinite}
+    @keyframes st-glint{0%,8%,43%,100%{opacity:.65;transform:scale(.9)}13%,27%{opacity:1;transform:scale(1.08)}20%,36%{opacity:.8;transform:scale(1)}86%{opacity:.65;transform:scale(.9)}}
+    .st-lamp-glow{animation:st-lamp 16s ease-in-out infinite}
+    .st-beam{animation:st-beam 16s ease-in-out infinite}
+    .st-shimmer{animation:st-shimmer 16s ease-in-out infinite}
+    .st-head-left{transform-origin:57px 155px;animation:st-head-left 16s ease-in-out infinite}
+    .st-head-right{transform-origin:199px 155px;animation:st-head-right 16s ease-in-out infinite}
+    .st-wave-a,.st-wave-b{animation:st-wave 16s ease-in-out infinite}
+    .st-wave-b{animation-delay:.22s}
+    .st-scene-one{animation:st-scene-one 16s ease-in-out infinite}
+    .st-scene-two{animation:st-scene-two 16s ease-in-out infinite}
+    .st-scene-three{animation:st-scene-three 16s ease-in-out infinite}
+    .st-sun{transform-origin:157px 130px;animation:st-sun 16s ease-in-out infinite}
+    .st-boat{animation:st-boat 16s ease-in-out infinite}
+    .st-cloud{animation:st-cloud 16s ease-in-out infinite}
+    .st-star{animation:st-star 16s ease-in-out infinite}
+    .st-sound-dot{animation:st-sound 16s ease-out infinite}
+    .st-sound-dot.two{animation-delay:.28s}.st-sound-dot.three{animation-delay:.56s}
+    @keyframes st-lamp{0%,2%,91%,100%{opacity:.2}7%,86%{opacity:1}}
+    @keyframes st-beam{0%,2%,91%,100%{opacity:0}8%,86%{opacity:.62}}
+    @keyframes st-shimmer{0%,5%,15%,100%{transform:translateX(-70px);opacity:0}7%{opacity:.85}14%{transform:translateX(95px);opacity:0}}
+    @keyframes st-head-left{0%,12%,43%,100%{transform:rotate(0) translateX(0)}14%{transform:rotate(-1.8deg) translateX(-1px)}16%{transform:rotate(1.5deg) translateX(1px)}18%{transform:rotate(-1.3deg)}20%{transform:rotate(1deg)}22%{transform:rotate(0)}26%{transform:rotate(-1.4deg) translateX(-1px)}28%{transform:rotate(1.2deg) translateX(1px)}30%{transform:rotate(0)}}
+    @keyframes st-head-right{0%,12%,43%,100%{transform:rotate(0) translateX(0)}14%{transform:rotate(1.8deg) translateX(1px)}16%{transform:rotate(-1.5deg) translateX(-1px)}18%{transform:rotate(1.3deg)}20%{transform:rotate(-1deg)}22%{transform:rotate(0)}26%{transform:rotate(1.4deg) translateX(1px)}28%{transform:rotate(-1.2deg) translateX(-1px)}30%{transform:rotate(0)}}
+    @keyframes st-wave{0%,12%,43%,100%{opacity:0;transform:scale(.7)}15%,31%{opacity:.75;transform:scale(1)}36%{opacity:0;transform:scale(1.18)}}
+    @keyframes st-scene-one{0%,13%,94%,100%{opacity:1}23%,84%{opacity:0}}
+    @keyframes st-scene-two{0%,13%,43%,100%{opacity:0}23%,31%{opacity:1}}
+    @keyframes st-scene-three{0%,31%,94%,100%{opacity:0}43%,84%{opacity:1}}
+    @keyframes st-sun{0%,7%{transform:translateY(8px);opacity:.5}10%,15%{transform:translateY(0);opacity:1}19%,100%{transform:translateY(6px);opacity:0}}
+    @keyframes st-boat{0%,17%,32%,100%{transform:translate(0,0) rotate(0);opacity:0}20%{opacity:1;transform:translate(0,-1px) rotate(-2deg)}24%{transform:translate(5px,1px) rotate(2deg)}29%{opacity:1;transform:translate(10px,-1px) rotate(-1deg)}}
+    @keyframes st-cloud{0%,31%,100%{transform:translateX(-8px);opacity:0}35%{opacity:.75}43%,86%{transform:translateX(2px);opacity:.75}90%{opacity:0}}
+    @keyframes st-star{0%,34%,100%{opacity:0;transform:scale(.7)}39%{opacity:1;transform:scale(1)}43%,86%{opacity:.72;transform:scale(.9)}90%{opacity:0}}
+    @keyframes st-sound{0%,12%,35%,100%{opacity:0;transform:translateY(0) scale(.7)}15%{opacity:.8}30%{opacity:0;transform:translateY(-10px) scale(1.15)}}
+    @media(prefers-reduced-motion:reduce){.st-glint,.st-lamp-glow,.st-beam,.st-shimmer,.st-head-left,.st-head-right,.st-wave-a,.st-wave-b,.st-scene-one,.st-scene-two,.st-scene-three,.st-sun,.st-boat,.st-cloud,.st-star,.st-sound-dot{animation:none!important}.st-lamp-glow{opacity:1}.st-beam{opacity:.5}.st-scene-two,.st-scene-three{opacity:0}}
+  </style>
+
+  <!-- Circular headphone band and stable base. -->
+  <path d="M31 183C-8 136 15 57 68 24C103 2 153 2 188 24C241 57 264 136 225 183" fill="none" stroke="#5b24c5" stroke-width="17" stroke-linecap="round"/>
+  <path d="M31 183C-8 136 15 57 68 24C103 2 153 2 188 24C241 57 264 136 225 183" fill="none" stroke="url(#st-frame)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M24 154C10 111 33 52 73 29C107 9 149 9 183 29C223 52 246 111 232 154" fill="none" stroke="#f4ddff" stroke-width="2.5" stroke-linecap="round" opacity=".75"/>
+  <rect x="26" y="199" width="204" height="18" rx="9" fill="#5c22bd" stroke="#eeccff" stroke-width="2"/>
+  <rect x="31" y="201" width="194" height="11" rx="5.5" fill="url(#st-metal)"/>
+  <path d="M52 218h152l-12 16H64Z" fill="url(#st-frame)" stroke="#e6c7ff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M73 231h110" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+
+  <!-- Lamp and its staged light beam. -->
+  <g class="st-beam" opacity="0">
+    <path d="M112 58h32l32 62H80Z" fill="url(#st-glow)"/>
+  </g>
+  <g clip-path="url(#st-beam-clip)">
+    <rect class="st-shimmer" x="91" y="55" width="20" height="76" transform="skewX(-18)" fill="url(#st-shimmer)" opacity="0"/>
+  </g>
+  <circle class="st-lamp-glow" cx="128" cy="62" r="21" fill="#f0b9ff" opacity=".2" filter="url(#st-soft-glow)"/>
+  <rect x="122" y="15" width="12" height="25" rx="6" fill="url(#st-metal)" stroke="#fff" stroke-width="1.5"/>
+  <path d="M99 55c1-18 12-27 29-27s28 9 29 27c-14 5-44 5-58 0Z" fill="url(#st-panel)" stroke="#f4dbff" stroke-width="2"/>
+  <circle class="st-lamp-glow" cx="128" cy="59" r="10" fill="url(#st-bulb)" opacity=".2"/>
+
+  <!-- Headphone cups: movement is deliberately small for crisp rendering. -->
+  <g class="st-head-left">
+    <rect x="25" y="112" width="38" height="78" rx="14" fill="#5520bb" stroke="#f0d8ff" stroke-width="3"/>
+    <rect x="31" y="118" width="25" height="66" rx="10" fill="url(#st-panel)"/>
+    <path d="M36 125v50" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+  </g>
+  <g class="st-head-right">
+    <rect x="193" y="112" width="38" height="78" rx="14" fill="#5520bb" stroke="#f0d8ff" stroke-width="3"/>
+    <rect x="200" y="118" width="25" height="66" rx="10" fill="url(#st-panel)"/>
+    <path d="M220 125v50" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+  </g>
+  <g fill="none" stroke="#deb8ff" stroke-width="2" stroke-linecap="round" transform-origin="128px 150px">
+    <path class="st-wave-a" d="M17 136c-5 8-5 20 0 28" opacity="0"/>
+    <path class="st-wave-b" d="M239 136c5 8 5 20 0 28" opacity="0"/>
+  </g>
+  <g fill="#fff" class="st-sound-dot" opacity="0"><circle cx="20" cy="125" r="2.2"/><circle cx="236" cy="125" r="2.2"/></g>
+  <g fill="#e3baff" class="st-sound-dot two" opacity="0"><circle cx="14" cy="118" r="1.7"/><circle cx="242" cy="118" r="1.7"/></g>
+  <g fill="#b97cff" class="st-sound-dot three" opacity="0"><circle cx="21" cy="111" r="1.4"/><circle cx="235" cy="111" r="1.4"/></g>
+
+  <!-- Picture housing. -->
+  <rect x="69" y="103" width="118" height="94" rx="12" fill="#5321b6" stroke="#f5dcff" stroke-width="3"/>
+  <rect x="76" y="111" width="108" height="78" rx="9" fill="url(#st-panel)"/>
+  <g clip-path="url(#st-screen-clip)">
+    <!-- Scene one: soft mountains and a sun that rises above their horizon. -->
+    <g class="st-scene-one">
+      <rect x="76" y="111" width="108" height="78" fill="#bb8df5"/>
+      <circle class="st-sun" cx="157" cy="130" r="12" fill="#6530c8" stroke="#e8c9ff" stroke-width="1.5"/>
+      <path d="M76 189 111 152q4-5 8 0l25 25 14-14q3-3 6 0l20 21v5Z" fill="url(#st-dark)"/>
+      <path d="m108 157 7-6q3-2 6 1l7 8-8-3-5 4Z" fill="#ddc4ff" opacity=".7"/>
+    </g>
+    <!-- Scene two: water and a tiny boat moving with the waves. -->
+    <g class="st-scene-two" opacity="0">
+      <rect x="76" y="111" width="108" height="78" fill="#9162cf"/>
+      <circle cx="96" cy="128" r="9" fill="#f7c7ff"/>
+      <path d="M76 148q14-6 28 0t28 0 28 0 24 0v41H76Z" fill="url(#st-sea)"/>
+      <path d="M76 158q14-6 28 0t28 0 28 0 24 0M76 170q14-6 28 0t28 0 28 0 24 0" fill="none" stroke="#ebcdff" stroke-width="2" opacity=".7"/>
+      <g class="st-boat" opacity="0">
+        <path d="M112 151h22l-4 7h-14Z" fill="#421480" stroke="#fff" stroke-width="1"/>
+        <path d="M121 136v15m1-13 9 9h-9Z" fill="#f6d7ff" stroke="#fff" stroke-width="1" stroke-linejoin="round"/>
+      </g>
+    </g>
+    <!-- Scene three/rest: night studio landscape with a subtle Simme antenna. -->
+    <g class="st-scene-three" opacity="0">
+      <rect x="76" y="111" width="108" height="78" fill="#2d1b72"/>
+      <path d="M76 178 102 157l20 16 20-24 42 35v5H76Z" fill="#5b30bd"/>
+      <path d="M76 182q20-7 39 0t38 0 31 0v7H76Z" fill="#7947cc"/>
+      <g class="st-cloud" fill="#c9b4ff" opacity="0"><circle cx="103" cy="130" r="5"/><circle cx="109" cy="127" r="7"/><circle cx="117" cy="131" r="5"/><rect x="102" y="130" width="17" height="5" rx="2.5"/></g>
+      <g class="st-star" fill="#fff" opacity="0"><circle cx="153" cy="127" r="1.7"/><circle cx="166" cy="137" r="1.3"/><circle cx="139" cy="119" r="1.1"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" x="115" y="149" width="27" height="34" viewBox="0 0 230 282" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" role="img" aria-label="Animated purple Simme character waiting">
+    <metadata>Character geometry extracted directly from the supplied Simmes-SymSoul-Hero.svg; only colour and animation behaviour altered.</metadata><g transform="matrix(1,0,0,1,-20841,-19381)">
+        <g transform="matrix(1,0,0,1,-55929.6,-45502)">
+            <g id="st-exact-Bubble-Bot" transform="matrix(1.00009,0,0,1.00009,1404.44,281.451)">
+                <g id="st-exact-blue">
+                    <g id="st-exact-Bubble-Bot1" serif:id="st-exact-Bubble-Bot">
+                        <g id="st-exact-Body" transform="matrix(1.01207,0,0,1.01207,-909.829,-781.799)">
+                            <circle cx="75481.1" cy="64749.7" r="90.77" style="fill:url(#st-exact-_Radial1);"/>
+                        </g>
+                        <g id="st-exact-Antena" transform="matrix(1,0,0,1,171.74,13.6215)">
+                            <g transform="matrix(1,0,0,1,7.17636,0.51339)">
+                                <path d="M75304,64620.1C75304,64620.1 75304,64638.9 75304,64647.5C75304,64648.6 75303.5,64649.7 75302.8,64650.5C75302,64651.3 75300.9,64651.7 75299.8,64651.7C75299.7,64651.7 75299.7,64651.7 75299.7,64651.7C75298.6,64651.7 75297.5,64651.3 75296.7,64650.5C75295.9,64649.7 75295.5,64648.6 75295.5,64647.5C75295.5,64638.9 75295.5,64620.1 75295.5,64620.1L75304,64620.1Z" style="fill:#a874ff;"/>
+                            </g>
+                            <g transform="matrix(1.1514,0,0,1.1514,-11399.7,-9788.58)">
+                                <circle cx="75305.4" cy="64617.5" r="11.241" style="fill:#a874ff;"/>
+                                <clipPath id="st-exact-_clip2">
+                                    <circle cx="75305.4" cy="64617.5" r="11.241"/>
+                                </clipPath>
+                                <g clip-path="url(#st-exact-_clip2)">
+                                    <g id="st-exact-Soul-Dot" transform="matrix(0.109352,0,0,0.109352,70863.2,60761.2)">
+                                        <circle cx="40623.6" cy="35265.1" r="56.705" style="fill:#e2bdff;"/>
+                                        <path d="M40623.6,35208.4C40654.9,35208.4 40680.3,35233.8 40680.3,35265.1C40680.3,35296.4 40654.9,35321.8 40623.6,35321.8C40592.3,35321.8 40566.9,35296.4 40566.9,35265.1C40566.9,35233.8 40592.3,35208.4 40623.6,35208.4ZM40623.6,35211.7C40594.1,35211.7 40570.2,35235.6 40570.2,35265.1C40570.2,35294.5 40594.1,35318.5 40623.6,35318.5C40653,35318.5 40676.9,35294.5 40676.9,35265.1C40676.9,35235.6 40653,35211.7 40623.6,35211.7Z" style="fill:#e2bdff;"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="st-exact-Ear-Left" transform="matrix(0.8357,-0.549186,0.549186,0.8357,-23130.3,51929.9)">
+                            <path d="M75382,64738.9C75386.9,64738.9 75396.8,64738.9 75401.7,64743.7C75406.6,64748.6 75406.6,64758.3 75401.7,64768.1C75398.3,64775.4 75389.4,64782.7 75382,64787.5C75374.6,64782.7 75365.7,64775.4 75362.2,64768.1C75357.3,64758.3 75357.3,64748.6 75362.2,64743.7C75367.2,64738.9 75377,64738.9 75382,64738.9Z" style="fill:#a874ff;"/>
+                            <clipPath id="st-exact-_clip3">
+                                <path d="M75382,64738.9C75386.9,64738.9 75396.8,64738.9 75401.7,64743.7C75406.6,64748.6 75406.6,64758.3 75401.7,64768.1C75398.3,64775.4 75389.4,64782.7 75382,64787.5C75374.6,64782.7 75365.7,64775.4 75362.2,64768.1C75357.3,64758.3 75357.3,64748.6 75362.2,64743.7C75367.2,64738.9 75377,64738.9 75382,64738.9Z"/>
+                            </clipPath>
+                            <g clip-path="url(#st-exact-_clip3)">
+                                <g transform="matrix(0.583725,0,0,0.583725,31379.9,26963.9)">
+                                    <path d="M75382,64738.9C75386.9,64738.9 75396.8,64738.9 75401.7,64743.7C75406.6,64748.6 75406.6,64758.3 75401.7,64768.1C75398.3,64775.4 75389.4,64782.7 75382,64787.5C75374.6,64782.7 75365.7,64775.4 75362.2,64768.1C75357.3,64758.3 75357.3,64748.6 75362.2,64743.7C75367.2,64738.9 75377,64738.9 75382,64738.9Z" style="fill:#6730e8;"/>
+                                </g>
+                                <g transform="matrix(0.8357,0.549186,-0.549186,0.8357,48878.9,-30003.9)">
+                                    <circle cx="74204.7" cy="64659.2" r="1.77" style="fill:white;fill-opacity:0;"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="st-exact-Ear-Right" transform="matrix(0.931102,0.364759,-0.364759,0.931102,28960.6,-23144.4)">
+                            <path d="M75382,64738.9C75386.9,64738.9 75396.8,64738.9 75401.7,64743.7C75406.6,64748.6 75406.6,64758.3 75401.7,64768.1C75398.3,64775.4 75389.4,64782.7 75382,64787.5C75374.6,64782.7 75365.7,64775.4 75362.2,64768.1C75357.3,64758.3 75357.3,64748.6 75362.2,64743.7C75367.2,64738.9 75377,64738.9 75382,64738.9Z" style="fill:#a874ff;"/>
+                            <clipPath id="st-exact-_clip4">
+                                <path d="M75382,64738.9C75386.9,64738.9 75396.8,64738.9 75401.7,64743.7C75406.6,64748.6 75406.6,64758.3 75401.7,64768.1C75398.3,64775.4 75389.4,64782.7 75382,64787.5C75374.6,64782.7 75365.7,64775.4 75362.2,64768.1C75357.3,64758.3 75357.3,64748.6 75362.2,64743.7C75367.2,64738.9 75377,64738.9 75382,64738.9Z"/>
+                            </clipPath>
+                            <g clip-path="url(#st-exact-_clip4)">
+                                <g transform="matrix(0.583725,0,0,0.583725,31379.9,26963.9)">
+                                    <path d="M75382,64738.9C75386.9,64738.9 75396.8,64738.9 75401.7,64743.7C75406.6,64748.6 75406.6,64758.3 75401.7,64768.1C75398.3,64775.4 75389.4,64782.7 75382,64787.5C75374.6,64782.7 75365.7,64775.4 75362.2,64768.1C75357.3,64758.3 75357.3,64748.6 75362.2,64743.7C75367.2,64738.9 75377,64738.9 75382,64738.9Z" style="fill:#6730e8;"/>
+                                </g>
+                                <g transform="matrix(0.931102,-0.364759,0.364759,0.931102,-17295,31646.6)">
+                                    <circle cx="74204.7" cy="64659.2" r="1.77" style="fill:white;fill-opacity:0;"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="st-exact-Left-Eye" transform="matrix(1,0,0,1,-0.521685,-1.96708)">
+                            <ellipse cx="75450.7" cy="64709.1" rx="17.181" ry="17.181"></ellipse><clipPath id="st-exact-_clip5">
+                                <ellipse cx="75450.7" cy="64709.1" rx="17.181" ry="17.181"></ellipse></clipPath>
+                            <g clip-path="url(#st-exact-_clip5)">
+                                <g id="st-exact-Left-puple" transform="matrix(0.419843,0,0,0.419843,43781.6,37544.9)">
+                                    <circle cx="75450.7" cy="64709.1" r="17.181" style="fill:white;"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="st-exact-Right-Eye" transform="matrix(1,0,0,1,64.6169,-1.96708)">
+                            <ellipse cx="75450.7" cy="64709.1" rx="17.181" ry="17.181"></ellipse><clipPath id="st-exact-_clip6">
+                                <ellipse cx="75450.7" cy="64709.1" rx="17.181" ry="17.181"></ellipse></clipPath>
+                            <g clip-path="url(#st-exact-_clip6)">
+                                <g id="st-exact-Left-puple1" serif:id="st-exact-Left-puple" transform="matrix(0.419843,0,0,0.419843,43781.6,37544.9)">
+                                    <circle cx="75450.7" cy="64709.1" r="17.181" style="fill:white;"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="st-exact-Left-Foot" transform="matrix(1,0,0,1,9.92063,-2.10184)">
+                            <circle cx="75452" cy="64848.9" r="16.731" style="fill:#6730e8;"/>
+                        </g>
+                        <g id="st-exact-Right-Foot" transform="matrix(1,0,0,1,50.7292,-2.10184)">
+                            <circle cx="75452" cy="64848.9" r="16.731" style="fill:#6730e8;"/>
+                        </g>
+                        <g id="st-exact-Right-Hand" transform="matrix(0.411549,-0.529864,0.88897,0.690469,-12836.8,59951.1)">
+                            <circle cx="75171" cy="64643.4" r="23.277" style="fill:#6730e8;"/>
+                        </g>
+                        <g id="st-exact-Right-Hand1" serif:id="st-exact-Right-Hand" transform="matrix(-0.411549,-0.529864,-0.88897,0.690469,163797,59951.1)">
+                            <circle cx="75171" cy="64643.4" r="23.277" style="fill:#6730e8;"/>
+                            <clipPath id="st-exact-_clip7">
+                                <circle cx="75171" cy="64643.4" r="23.277"/>
+                            </clipPath>
+                            <g clip-path="url(#st-exact-_clip7)">
+                                <g id="st-exact-pivot-point" transform="matrix(0.914293,0.701626,-1.17714,0.544957,83557.5,-22686.8)">
+                                    <circle cx="74166.6" cy="64729.6" r="1.918" style="fill:white;fill-opacity:0;"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <radialGradient id="st-exact-_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(170.393,44.479,-44.479,170.393,75397.9,64723.9)"><stop offset="0" style="stop-color:#5821cc;stop-opacity:1"/><stop offset="1" style="stop-color:#bd8cff;stop-opacity:1"/></radialGradient>
+    </defs>
+</svg>
+
+    </g>
+    <path d="M80 116h57l-56 37Z" fill="#fff" opacity=".13"/>
+  </g>
+  <rect x="76" y="111" width="108" height="78" rx="9" fill="none" stroke="#fff" stroke-width="1.5" opacity=".55"/>
+
+  <!-- Branded sparkle remains quiet while the central content changes. -->
+  <g transform="translate(73 84)"><g class="st-glint">
+    
+    <path d="M0-10C2-3 5-1 11 0 5 2 2 5 0 11-2 5-5 2-11 0-5-2-2-5 0-10Z" fill="#fff"/>
+  </g></g>
+</svg>

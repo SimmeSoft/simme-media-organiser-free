@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 26 26" role="img" aria-labelledby="g01-title g01-desc"><title id="g01-title">Workflow automation</title><desc id="g01-desc">Arrows circulate slowly around a steady media folder. Gold Simme PRO glyph, transparent background.</desc><defs><linearGradient id="g01-gold" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff0b5"/><stop offset=".32" stop-color="#ffd676"/><stop offset=".68" stop-color="#e6b34d"/><stop offset="1" stop-color="#b88628"/></linearGradient></defs><style>.g01-cycle{transform-origin:12px 12px;animation:g01-orbit 18s linear infinite}.g01-node-a,.g01-node-b{animation:g01-node 4s ease-in-out infinite}.g01-node-b{animation-delay:-2s}@keyframes g01-orbit{to{transform:rotate(360deg)}}@keyframes g01-node{0%,100%{fill:#101823}50%{fill:#896522}}@media(prefers-reduced-motion:reduce){svg *{animation:none!important}}</style><g transform="translate(1 1)"><g class="g01-cycle" stroke="url(#g01-gold)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4.1 8.3A8.6 8.6 0 0 1 15.8 4.1"/><path d="m15 2.5 1.8 2.1-2.6.8"/>
+<path d="M19.9 15.7A8.6 8.6 0 0 1 8.2 19.9"/><path d="m9 21.5-1.8-2.1 2.6-.8"/>
+<path d="M19 6.8a8.5 8.5 0 0 1 1.2 2M5 17.2a8.5 8.5 0 0 1-1.2-2"/>
+</g><g fill="#101823" stroke="url(#g01-gold)" stroke-width="1.4"><circle class="g01-node-a" cx="3" cy="12" r="1.7"/><circle class="g01-node-b" cx="21" cy="12" r="1.7"/></g>
+<path d="M7.6 8.5h3.1l1.2 1.3h4.6a.8.8 0 0 1 .8.8v5a.9.9 0 0 1-.9.9H7.6a.9.9 0 0 1-.9-.9V9.4a.9.9 0 0 1 .9-.9Z" fill="url(#g01-gold)" stroke="#ffe8a7" stroke-width=".4"/>
+<path d="M7.1 11h9.8" stroke="#fff1be" stroke-width=".65"/>
+</g></svg>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="220" viewBox="0 0 256 220" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="mls-title mls-desc">
+  <title id="mls-title">Media library</title>
+  <desc id="mls-desc">Layered media frames with a sun setting behind a fully masked mountain horizon, a gently rocking boat and waves, the default Simme character in matching silver-blue/violet peeking over a dune, and softly shimmering stars. Transparent 32-second loop.</desc>
+  <defs>
+    <linearGradient id="mls-rim" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#02d4ff" />
+      <stop offset=".35" stop-color="#2889ff" />
+      <stop offset=".7" stop-color="#513bff" />
+      <stop offset="1" stop-color="#ad03fb" />
+    </linearGradient>
+    <linearGradient id="mls-glass" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#c5f0ff" />
+      <stop offset=".12" stop-color="#f6fcff" />
+      <stop offset=".36" stop-color="#b9d8ff" />
+      <stop offset=".7" stop-color="#90b9fc" />
+      <stop offset=".86" stop-color="#b5a2ff" />
+      <stop offset="1" stop-color="#f0cbff" />
+    </linearGradient>
+    <linearGradient id="mls-screen" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#28497f" />
+      <stop offset=".3" stop-color="#11264e" />
+      <stop offset="1" stop-color="#080b28" />
+    </linearGradient>
+    <linearGradient id="mls-sculpt" x1=".2" y1="0" x2=".7" y2="1">
+      <stop stop-color="#f2fcff" />
+      <stop offset=".32" stop-color="#b9d2ee" />
+      <stop offset=".65" stop-color="#83a5ee" />
+      <stop offset=".9" stop-color="#9c74f6" />
+      <stop offset="1" stop-color="#d777ff" />
+    </linearGradient>
+    <linearGradient id="mls-distant" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7dbbdd" />
+      <stop offset="1" stop-color="#685be0" />
+    </linearGradient>
+    <linearGradient id="mls-shine" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#b6e9ff" stop-opacity=".28" />
+      <stop offset="1" stop-color="#96bfff" stop-opacity="0" />
+    </linearGradient>
+    <clipPath id="mls-window">
+      <rect x="38" y="67" width="159" height="115" rx="11" />
+    </clipPath>
+    <mask id="mls-sun-horizon" maskUnits="userSpaceOnUse" x="35" y="65" width="170" height="125">
+      <rect x="35" y="65" width="170" height="125" fill="white" />
+      <path d="M35 183L45 171 95 108Q99 103 103 109L139 152 157 132Q162 127 165 132L192 169 205 180V195H35Z" fill="black" />
+    </mask>
+    <clipPath id="mls-simme-eye-left">
+      <circle cx="460" cy="459" r="79" />
+    </clipPath>
+    <clipPath id="mls-simme-eye-right">
+      <circle cx="765" cy="459" r="79" />
+    </clipPath>
+  </defs>
+  <style>
+.mls-scene{animation-duration:32s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+.mls-mountain{animation-name:mls-first}.mls-coast{animation-name:mls-second;opacity:0}.mls-dunes{animation-name:mls-third;opacity:0}.mls-night{animation-name:mls-fourth;opacity:0}
+@keyframes mls-first{0%,20%,100%{opacity:1}25%,95%{opacity:0}}
+@keyframes mls-second{0%,20%,50%,100%{opacity:0}25%,45%{opacity:1}}
+@keyframes mls-third{0%,45%,75%,100%{opacity:0}50%,70%{opacity:1}}
+@keyframes mls-fourth{0%,70%,100%{opacity:0}75%,95%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.mls-scene{animation:none!important}.mls-mountain{opacity:1}.mls-coast,.mls-dunes,.mls-night{display:none}}
+
+/* Scene-specific movement is confined to the clipped front image. */
+.mls-sunset{animation:mls-sunset 32s ease-in-out infinite}
+.mls-wave-back{animation:mls-wave-back 32s ease-in-out infinite}
+.mls-wave-front{animation:mls-wave-front 32s ease-in-out infinite}
+.mls-boat{transform-origin:136px 155px;animation:mls-boat 32s ease-in-out infinite}
+.mls-simme-peek{animation:mls-simme-peek 32s ease-in-out infinite}
+.mls-stars{animation:mls-stars 32s ease-in-out infinite}
+@keyframes mls-sunset{0%,7%,100%{transform:translate(0,0)}20%,95%{transform:translate(-8px,75px)}}
+@keyframes mls-wave-back{0%,20%,100%{transform:translate(0,0)}27%{transform:translate(-6px,1px)}34%{transform:translate(-12px,0)}41%{transform:translate(-18px,1px)}50%,95%{transform:translate(-24px,0)}}
+@keyframes mls-wave-front{0%,20%,100%{transform:translate(0,0)}27%{transform:translate(5px,-1px)}34%{transform:translate(10px,1px)}41%{transform:translate(15px,-1px)}50%,95%{transform:translate(20px,0)}}
+@keyframes mls-boat{0%,20%,50%,100%{transform:translate(0,0) rotate(0)}27%{transform:translate(-1px,-1.5px) rotate(-2deg)}34%{transform:translate(0,1px) rotate(2deg)}41%{transform:translate(1px,-1.5px) rotate(-2deg)}}
+@keyframes mls-simme-peek{0%,52%,72%,100%{transform:translateY(19px);opacity:0}55%{opacity:1;transform:translateY(12px)}59%,65%{opacity:1;transform:translateY(0)}69%{opacity:1;transform:translateY(12px)}}
+@keyframes mls-stars{0%,73%,100%{opacity:.65}79%{opacity:1}85%{opacity:.55}91%{opacity:1}96%{opacity:.65}}
+@media(prefers-reduced-motion:reduce){.mls-sunset,.mls-wave-back,.mls-wave-front,.mls-boat,.mls-simme-peek,.mls-stars{animation:none!important}.mls-simme-peek{display:none}}
+</style>
+  <rect x="57" y="19" width="186" height="155" rx="26" fill="url(#mls-glass)" stroke="url(#mls-rim)" stroke-width="2.5" />
+  <rect x="59.5" y="21.5" width="181" height="150" rx="23.5" fill="none" stroke="#eefaff" stroke-width="1.3" opacity=".85" />
+  <rect x="65" y="32" width="165" height="131" rx="17" fill="#091536" stroke="#6b79f5" stroke-width="2" />
+  <path d="M67 29Q70 22 84 22H215" fill="none" stroke="#fff" stroke-width="2.4" opacity=".85" stroke-linecap="round" />
+  <rect x="23" y="44" width="198" height="154" rx="29" fill="url(#mls-glass)" stroke="url(#mls-rim)" stroke-width="2.5" />
+  <rect x="25.5" y="46.5" width="193" height="149" rx="26.5" fill="none" stroke="#f1fcff" stroke-width="1.3" />
+  <rect x="35" y="57" width="175" height="129" rx="18" fill="#05112e" stroke="#598bfc" stroke-width="2.2" />
+  <rect x="38" y="62" width="165" height="120" rx="13" fill="url(#mls-screen)" stroke="#5c80d3" stroke-width="1.2" />
+  <g clip-path="url(#mls-window)">
+    <g class="mls-scene mls-mountain" fill="url(#mls-sculpt)" stroke="#e7f6ff" stroke-width="1.8" stroke-linejoin="round">
+      <g mask="url(#mls-sun-horizon)">
+        <circle cx="163" cy="97" r="19" class="mls-sunset" />
+      </g>
+      <path d="M45 171 95 108Q99 103 103 109L139 152 157 132Q162 127 165 132L192 169Q196 176 189 177H50Q42 177 45 171Z" />
+    </g>
+    <g class="mls-scene mls-coast">
+      <circle cx="82" cy="96" r="16" fill="url(#mls-sculpt)" stroke="#e7f6ff" stroke-width="1.5" />
+      <path d="M10 153Q38 143 62 153T112 153T162 153T212 153T242 153V191H10Z" fill="url(#mls-distant)" class="mls-wave-back" />
+      <path d="M10 165Q32 154 54 165T100 165T146 165T192 165T238 165V191H10Z" fill="url(#mls-sculpt)" stroke="#c9efff" stroke-width="1.5" class="mls-wave-front" />
+      <g class="mls-boat">
+        <path d="M130 148V101L111 139H130M134 148h27l-27-37Z" fill="url(#mls-sculpt)" stroke="#edfaff" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="M113 151h53l-10 8h-32Z" fill="#b8dafa" />
+      </g>
+    </g>
+    <g class="mls-scene mls-dunes">
+      <circle cx="159" cy="97" r="18" fill="url(#mls-sculpt)" stroke="#e7f6ff" stroke-width="1.5" />
+      <path d="M36 166Q75 115 115 144T204 148V184H36Z" fill="url(#mls-distant)" />
+      <g class="mls-simme-peek">
+        <g transform="translate(141 140) scale(.02)">
+          <g>
+            <ellipse cx="607" cy="650" rx="431" ry="417" fill="url(#mls-sculpt)" />
+            <g>
+              <path d="M445 309C370 310 306 297 271 246 231 190 266 155 330 119 375 94 406 80 434 109 480 151 489 219 445 309Z" fill="url(#mls-sculpt)" />
+              <path d="M432 287C377 286 342 271 325 244 307 215 339 191 371 172 416 146 432 178 441 204 453 233 444 262 432 287Z" fill="url(#mls-distant)" />
+            </g>
+            <g>
+              <path d="M772 316C732 265 709 219 722 164 730 121 751 88 792 95 849 104 909 135 930 166 970 228 886 295 772 316Z" fill="url(#mls-sculpt)" />
+              <path d="M783 294C759 262 745 228 754 197 761 168 777 159 802 166 837 174 864 189 874 206 896 246 841 280 783 294Z" fill="url(#mls-distant)" />
+            </g>
+            <g>
+              <rect x="573" y="115" width="40" height="158" rx="9" fill="url(#mls-sculpt)" />
+              <circle cx="593" cy="90" r="61" fill="url(#mls-sculpt)" />
+              <circle cx="593" cy="90" r="33" fill="#d3b5ff" />
+            </g>
+            <g>
+              <circle cx="460" cy="459" r="79" fill="#122044" />
+              <circle cx="765" cy="459" r="79" fill="#122044" />
+              <g clip-path="url(#mls-simme-eye-left)">
+                <g>
+                  <circle cx="494" cy="459" r="33" fill="#fff" />
+                </g>
+              </g>
+              <g clip-path="url(#mls-simme-eye-right)">
+                <g>
+                  <circle cx="791" cy="459" r="33" fill="#fff" />
+                </g>
+              </g>
+            </g>
+            <g>
+              <ellipse cx="200" cy="676" rx="122" ry="70" transform="rotate(-37 200 676)" fill="url(#mls-distant)" />
+            </g>
+            <g>
+              <ellipse cx="1000" cy="676" rx="122" ry="70" transform="rotate(37 1000 676)" fill="url(#mls-distant)" />
+            </g>
+            <g>
+              <ellipse cx="515" cy="1091" rx="79" ry="77" fill="url(#mls-distant)" />
+            </g>
+            <g>
+              <ellipse cx="705" cy="1091" rx="79" ry="77" fill="url(#mls-distant)" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <path d="M38 176Q85 137 125 158T205 145V184H38Z" fill="url(#mls-sculpt)" stroke="#daedff" stroke-width="1.5" />
+      <path d="M67 151v-32m0 15h-8v-11m8 18h9v-15" fill="none" stroke="#d3eaff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g class="mls-scene mls-night">
+      <path d="M163 80a19 19 0 1 0 15 28c-19 4-29-15-15-28Z" fill="url(#mls-sculpt)" stroke="#e7f6ff" stroke-width="1.5" />
+      <g fill="#e0edff" class="mls-stars">
+        <circle cx="64" cy="88" r="1.7" />
+        <circle cx="96" cy="101" r="1.5" />
+        <circle cx="120" cy="80" r="1.4" />
+        <path d="m79 115 1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5Z" />
+      </g>
+      <path d="M36 179 77 137 105 161 144 124 201 180Z" fill="url(#mls-distant)" />
+      <path d="M40 182 97 153 126 173 164 147 200 179V185Z" fill="url(#mls-sculpt)" stroke="#d8eaff" stroke-width="1.5" />
+    </g>
+  </g>
+  <path d="M49 68H148L43 131V80Q43 68 49 68Z" fill="url(#mls-shine)" pointer-events="none" />
+  <path d="M31 75Q33 49 56 49H192" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".9" />
+  <path d="M37 181Q41 192 56 192H188" fill="none" stroke="#eedaff" stroke-width="2" stroke-linecap="round" opacity=".7" />
+</svg>
