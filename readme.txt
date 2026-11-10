@@ -3,7 +3,7 @@ Contributors: simmesoftware
 Tags: media library, media folders, media management, image editor, image optimisation
 Requires at least: 6.4
 Tested up to: 7.1
-Stable tag: 1.3.1
+Stable tag: 1.3.2-rc1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -90,6 +90,12 @@ Simme Media Organiser stores its organisational metadata, media-health index and
 Your WordPress site, hosting environment and any other plugins may have their own privacy behaviour. Review those separately as appropriate for your site.
 
 == Changelog ==
+
+= 1.3.2-rc1 (QA only; not published to WordPress.org) =
+* Adds a fail-closed edition conflict check to prevent Free loading alongside standalone or companion Pro, protecting sites against duplicate Library class and hook registration.
+* Does not alter existing WordPress media paths, attachment IDs, image bytes, virtual-folder data, or Image Studio recovery logic.
+* Requires separate WordPress QA before the public 1.3.2 release; the current directory version remains 1.3.1.
+
 
 = 1.3.1-rc3.14 =
 * Refines the complete Free product for WordPress.org distribution.
