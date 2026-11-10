@@ -1,10 +1,14 @@
 # Simme Media Organiser — Free Edition
 
-This repository contains **only the free, GPL-licensed Simme Media Organiser WordPress plugin**, version **1.3.1**.
+This repository contains **only the free, GPL-licensed Simme Media Organiser WordPress plugin**, version **1.3.2-rc1 on the `release/1.3.2-compatibility-qa` branch** (public release remains 1.3.1).
 
 It is a public, source-readable copy of the corrected Free plugin submitted to the WordPress.org Plugin Directory for review on **15 October 2026**. The actual WordPress.org submission ZIP is not changed by publishing this repository.
 
 **This is NOT the commercial Simme Media Organiser Pro development repository.** The separate Pro product and the private development history are not included.
+
+## Current candidate and release safety
+
+The `release/1.3.2-compatibility-qa` branch is a reversible **testing candidate**, not the WordPress.org live distribution. It adds a conflict guard for Free and separate Pro editions, without changing media files or database data. Do not merge, tag, or publish this candidate before WordPress acceptance on a disposable site. The `main` branch and WordPress.org 1.3.1 remain unchanged.
 
 ## What it does
 
